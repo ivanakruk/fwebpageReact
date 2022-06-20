@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*******************************************    MENU NAVBAR ***************************************************/
+
+.header{
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 13px 14px -9px rgba(0, 0, 0, 0.274);
+}
+.nav{    
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+    
+}
+
+.header-submenu-container{
+    background-color: #fad2e6;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-submenu{
+    text-align: right;
+    width: 70%;
+   
+}
+
+button {    
+    font-size: 0.8em;
+    background-color: white;
+    border: none;
+}
+.nav{
+    height: auto;
+}
+.nav-link {
+    color:black;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: #df579b;
+    text-decoration: none;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 60px;
+    line-height: 70px; 
+    font-family: 'Abhaya Libre', serif; 
+}
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 90px;
+    margin-top: 8px;
+    list-style: none;
+}
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 5px;
+    line-height: 70px;
+    text-transform: uppercase;
+    width: max-content;
+    font-family: 'Abhaya Libre', serif; 
+}
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+
+}
+.nav-menu-link:hover,nav-menu-link_active{
+    background-color: #df579b49;
+    transition: 0.5s; 
+    color: white;
+}
+.nav-toggle {
+    color: black;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+
+}
+.portada {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.portada img{      
+    width: 40%;    
+    object-fit: cover;
+    
+}
+.portada-info { 
+    
+    height: auto;
+    background-color:white;
+    color: rgb(234 163 181);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.8em;
+    padding: 1em;
+    font-family: 'Gilda Display', serif;
+}
+
+.title-info-container{
+    width: 100%;
+    margin: 0em 0em;
+    padding: 2em 0em; 
+    border-bottom:  2px solid  #df579b ;
+    border-top:  2px solid  #df579b ;
+    text-align: center;
+    font-family: 'Abhaya Libre', serif; 
+}
+
+/*******************************************    home  ***************************************************/
+
+.home-container {
+    width: 70%;
+    height: auto;
+    margin: 2em 0em;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer{
+    width: 100%;
+    display: flex;   
+    justify-content: space-between;    
+    background-color: #f8cfe4;
+}
+
+.contacto-subscrition{
+    margin:2em;
+}
+.subscription{
+    display: flex;
+    margin-top: .5em;    
+}
+.subscription input{
+    margin-left: 1em;
+    
+}
+.container-info-footer{
+    display: flex;
+    align-items: center;
+    margin-right: 3em;
+}
+
+.container-info-footer .copyright{
+    margin-right: 2em;
+}
+.container-info-footer .redesSociales a i{
+    margin-right: .5em;
+}
+
+
