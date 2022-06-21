@@ -45,10 +45,11 @@ const ShoppingCart = () => {
                     <span>
                         <h3>Carrito</h3>
                         <div className='box'>
-                            <button onClick={clearCart}>Limpiar Carrito</button>
+                            
                             {
                               cart.map( (item, index) => <CartItem key={index} data = {item} delFromCart={delFromCart}/>)
                             }
+                            <button onClick={clearCart}>Limpiar Carrito</button>
                         </div>
                         <strong>Total {totalCart} </strong> <b> $</b>
                     </span>

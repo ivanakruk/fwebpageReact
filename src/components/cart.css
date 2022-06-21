@@ -9,3 +9,9 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
+.box-itemCart{
+
+}
+.box-itemCart button{
+    padding-right: 30px;
+}
