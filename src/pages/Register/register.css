@@ -1,0 +1,377 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  background-color: rgb(3, 3, 3);
+}
+.contenedor{
+  height: 100%;
+  background-image: url(../img/brush.jpg);
+  background-repeat: no-repeat; 
+  background-size:100% ;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.cardlogin{
+  width: 50%;
+  height: 65%;
+  display: flex;
+  border-style: solid;
+  border-color: rgb(234 163 181);
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+
+}
+
+.containerResponse{
+  width: 60%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  text-align: center;
+  padding: 1em;
+}
+.containerResponse h3 {
+  margin: 1em;
+  font-size: 1.5em; 
+}
+.containerResponse .responseLink{
+  font-size: 1.5em;
+}
+
+.containerResponseError{
+  width: 60%;
+  height: 100px;
+  background-color: white;  
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.containerResponseError{ 
+  margin: 1em;
+  font-size: 1.5em; 
+}
+
+
+.form{
+  margin: 0;
+  padding: 20px;
+  width: 60%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  background-color:#ffffff;
+  color: rgb(94, 94, 94);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1vw;
+}
+h1{
+  color: rgb(238, 163, 192);
+  font-family:none;
+}
+.input-subrallado{
+  margin: 10px;
+  padding: 10px;
+  width: 70%;
+  box-sizing: border-box;
+  border:none;
+  border-radius: 10px;
+  outline:none;
+  box-shadow: 
+  /* inset 0px 11px 8px -10px rgb(79, 108, 204), */
+  inset 0px -11px 8px -10px rgb(255, 45, 178); 
+}
+.tengoCuenta a{
+    padding: 15px 0;
+    color: rgb(233, 123, 123);
+}
+
+form label p{
+  margin: 0;
+  position: relative;
+  font-family:none;
+  font-size: 15px;
+  color: rgb(43, 43, 43);
+}
+
+
+.hbtn {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  padding: 8px 20px;
+  margin: 0px 3px 6px;
+  width: 30%;
+  text-align: center;
+  border: 2px solid  rgb(234 163 181);
+  border-radius: 30px;
+  text-decoration: none;
+  background-color:  rgb(234 163 181);
+  white-space: nowrap;
+  z-index: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1vw;
+  color: rgb(255, 255, 255);
+} 
+
+.hbtn i {
+  padding-right: 8px;
+} 
+
+.hb-fill-right-br::before {
+  position: absolute;
+  content: "";
+  background: rgb(234 163 181);
+  transition-duration: 0.3s;
+  z-index: -1;
+  inset: 0px auto auto 0px;
+  width: 0px;
+  height: 100%;
+  opacity: 1;
+} 
+
+.hb-fill-right-br:hover::before {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+} 
+
+.hb-fill-right-br:hover {
+  color: rgb(0, 0, 0);
+} 
+a{
+  text-decoration: none;
+ 
+  font-family:none;
+  font-size: 1vw;
+}
+a:hover{
+  color: #0a759c;
+  text-decoration:underline;
+}
+.radio{
+  margin-bottom:10px;
+ display:flex;
+ justify-content: flex-start;
+ align-items: center;
+}
+.radio input{
+  padding:0;
+  margin-top: 20px;
+  width: 20px;
+  box-shadow: none;
+}
+.radio label p{
+  padding:0;
+  margin-top: 10px; 
+  text-transform: none;
+  font-family:none;
+}
+.socialbtn{
+  border-top:solid rgb(234 163 181);
+  margin-top: 10px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fa-facebook{
+  width:10px;
+  margin: 20px;
+  color: #0a759c;
+}
+.fa-twitter{
+  width:10px;
+  margin:20px;
+  color: #86d2ee;
+} 
+.fa-google{
+  width:10px;
+  margin:20px;
+  color: red;
+}
+.opacidad{    
+  width: 40%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  object-fit: contain;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1vw;
+ 
+}
+
+.opacidad h2{
+  margin-bottom: 20px;
+  color: rgb(234 163 181);
+  text-decoration: underline;
+}
+.opacidad p{
+  color: rgb(234 163 181);
+}
+
+.portadalogin{
+  width: 40%;  
+  display: flex;
+  justify-content: center;
+}
+
+
+@media all and (max-width: 1200px){ 
+  .cardlogin{
+    width: 60%;
+  }
+  .contenedor{    
+    background-size:210% ;  
+  }  
+  .form{
+    width: 100%;
+    height: auto;
+  }
+  .input{
+    width: auto;
+    margin:5px;
+    display: flex;
+  }
+  label p{
+  font-size: 20px;
+  } 
+  .hbtn{
+    width: 70%;
+    font-size: 15px;
+  }
+  .socialbtn{
+    padding: 10px;
+    font-size: 20px;
+  }  
+  .opacidad{      
+    width: 50%;      
+  }
+  .checkBox {
+    display: flex;
+  }
+  .checkBox .text-reg a {
+    width: 100%;
+    margin-top: 2px;
+    font-size: 1.5em;
+  }
+  .opacidad:hover{
+    width: 200px;
+    height: 60%;
+  }
+} 
+@media all and (max-width: 1000px){
+  .opacidad{   
+    width: 40%;
+    margin: 0;
+  }
+  .opacidad:hover{
+    width: 200px;
+    height: 60%;
+  }
+ 
+}
+@media all and (max-width: 925px){ 
+  .cardlogin{
+    width: 60%;        
+  }
+  .form{
+    width: 100%;
+    font-size: 1.2vw;
+  } 
+  .contenedor{    
+    background-size:220% ;  
+  }  
+  h1{
+    font-size: 20px;
+  }
+  input{
+    width: 70%;
+  }
+  label p{
+    font-size: 60px;
+  }
+  .hbtn{
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 10px; 
+  }
+  a{
+    font-size: 15px;
+    height: auto;
+  }
+  .socialbtn{
+    font-size: 30px;
+  } 
+  .portadalogin{
+    display: none;
+  }
+  .opacidad{
+   display: none;
+  }
+} 
+@media all and (max-width: 600px){
+  .cardlogin{
+    width: 90%;
+    
+  }
+  .form{
+    width:100%;      
+    height: auto;
+    font-size: 1.2vw;
+  } 
+  .checkBox .text-reg a {
+    width: 100px;
+    margin-top: 2px;
+    font-size: 3em;
+  }
+  h1{
+    font-size: 25px;
+  }
+  input{
+    width: 70%;
+  }
+  label p{
+    font-size: 60px;
+  }
+  .contenedor{    
+    background-size:350% ;  
+  }  
+  .hbtn{
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 10px; 
+  }
+  a{
+    font-size: 3em;
+    height: auto;
+  }
+  .socialbtn{
+   font-size: 20px;
+  } 
+}
